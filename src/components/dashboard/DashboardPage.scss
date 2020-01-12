@@ -1,0 +1,30 @@
+.dashboard-page-container {
+  display: grid;
+  grid-template-areas: 'header' 'main';
+  grid-template-rows: 70px 1fr;
+  
+  .dashboard-page-header {
+    grid-area: header;
+
+  }
+
+  .dashboard-page-main {
+    grid-area: main;
+    display: grid;
+    height: 100%;
+    grid-template-areas: 'list content info';
+    grid-template-columns: 1fr 3fr 1fr;
+
+    .dashboard-page-list {
+      grid-area: list;
+    }
+
+    .dashboard-page-content {
+      grid-area: content;
+    }
+
+    .dashboard-page-info {
+      grid-area: info;
+    }
+  }
+}
